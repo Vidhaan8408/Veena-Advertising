@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veena Advertising</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Veena Advertising Logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>We Connect You</h1>
+        <p>Leading outdoor advertising solutions in Rajkot and surrounding highways.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Veena Advertising specializes in premium outdoor billboard advertising across Rajkot and its surrounding highways. We work directly with agencies representing top-tier brands, ensuring impactful visibility for our clients.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Large Format Billboard Advertising</li>
+            <li>Highway Hoardings & Roadside Displays</li>
+            <li>Transit & Bus Stop Advertising</li>
+            <li>Customized Branding Solutions</li>
+        </ul>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="billboard1.jpg" alt="Billboard 1">
+            <img src="billboard2.jpg" alt="Billboard 2">
+            <img src="billboard3.jpg" alt="Billboard 3">
+        </div>
+    </section>
+    
+    <section id="locations">
+        <h2>Billboard Locations</h2>
+        <div id="map"></div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Veena Advertising, Rajkot, India</p>
+        <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+        <p><strong>Email:</strong> info@veenaadvertising.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Veena Advertising. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function initMap() {
+            var rajkot = { lat: 22.3039, lng: 70.8022 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: rajkot
+            });
+        }
+    </script>
+</body>
+</html>
